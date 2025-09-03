@@ -39,7 +39,7 @@ export default function Terminal({ className = '' }: TerminalProps) {
 
       return () => clearInterval(typeInterval);
     }
-  }, [currentLine]);
+  }, [currentLine, lines]);
 
   return (
     <div className={`bg-black/90 border border-cyan-500/50 rounded-lg p-4 font-mono text-green-400 ${className}`}>

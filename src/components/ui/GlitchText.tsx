@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 interface GlitchTextProps {
   text: string;
@@ -24,7 +24,7 @@ export default function GlitchText({ text, className = '' }: GlitchTextProps) {
       setGlitchedText(
         text
           .split('')
-          .map((char, index) => {
+          .map((char) => {
             if (Math.random() < 0.3) {
               return glitchChars[Math.floor(Math.random() * glitchChars.length)];
             }

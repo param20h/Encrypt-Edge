@@ -15,7 +15,7 @@ export default function Home() {
               <span className="text-white">EDGE</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 font-mono">
-              LPU's Premier <span className="text-cyan-400">Cybersecurity</span> Student Community
+              LPU&apos;s Premier <span className="text-cyan-400">Cybersecurity</span> Student Community
             </p>
             <p className="text-lg text-slate-400">
               Learn • Compete • Connect with fellow cyber enthusiasts
@@ -149,7 +149,7 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4 font-mono">
-            Ready to <span className="text-cyan-400">Join</span> LPU's Cyber Community?
+            Ready to <span className="text-cyan-400">Join</span> LPU&apos;s Cyber Community?
           </h2>
           <p className="text-slate-300 text-lg mb-8">
             Connect with us on social media and be part of the cybersecurity revolution

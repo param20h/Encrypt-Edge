@@ -7,7 +7,7 @@ export default function Community() {
             Community <span className="text-slate-300">Members</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Meet the passionate individuals driving LPU's cybersecurity community forward
+            Meet the passionate individuals driving LPU&apos;s cybersecurity community forward
           </p>
         </div>
         <div className="text-center text-white">
