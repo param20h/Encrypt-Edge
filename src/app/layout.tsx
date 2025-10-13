@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import CyberNav from "@/components/CyberNav";
+import MatrixRain from "@/components/MatrixRain";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EncryptEdge - Coming Soon",
-  description: "EncryptEdge cybersecurity community is launching soon. Stay tuned for the ultimate cyber experience.",
+  title: "EncryptEdge - Cybersecurity Community",
+  description: "Join the ultimate cybersecurity community. Learn, compete, and connect with cyber warriors from around the grid.",
 };
 
 export default function RootLayout({
@@ -25,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-black min-h-screen text-white`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-white`}
       >
-        <main>
+        <MatrixRain />
+        <CyberNav />
+        <main className="pt-16">
           {children}
         </main>
       </body>
