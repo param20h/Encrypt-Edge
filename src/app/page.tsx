@@ -1,4 +1,3 @@
-import Terminal from '@/components/Terminal';
 import NeonButton from '@/components/ui/NeonButton';
 import CyberCard from '@/components/ui/CyberCard';
 import GlitchText from '@/components/ui/GlitchText';
@@ -57,35 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Terminal Demo Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4 font-mono">
-              <GlitchText text="Initialize Connection" />
-            </h2>
-            <p className="text-slate-300 text-lg">Experience the power of the grid</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Terminal className="h-64" />
-            <div className="space-y-6">
-              <CyberCard glowColor="cyan">
-                <h3 className="text-xl font-bold text-cyan-400 mb-2 font-mono">Live Terminal</h3>
-                <p className="text-slate-300">
-                  Experience real-time command execution in our secure sandbox environment.
-                </p>
-              </CyberCard>
-              <CyberCard glowColor="purple">
-                <h3 className="text-xl font-bold text-purple-400 mb-2 font-mono">CTF Challenges</h3>
-                <p className="text-slate-300">
-                  Solve capture-the-flag challenges and earn your place in the cyber elite.
-                </p>
-              </CyberCard>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Features Grid */}
       <section className="py-20 px-4 bg-black/20">
