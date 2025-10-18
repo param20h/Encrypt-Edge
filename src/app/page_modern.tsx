@@ -9,10 +9,10 @@ export default function Home() {
             <div className="space-y-6">
               <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-tight">
                 Cybersecurity Excellence for 
-                <span className="text-blue-600"> Tomorrow's Leaders</span>
+                <span className="text-blue-600"> Tomorrow&apos;s Leaders</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto">
-                Join LPU's premier cybersecurity community. Learn cutting-edge security practices, 
+                Join LPU&apos;s premier cybersecurity community. Learn cutting-edge security practices, 
                 compete in CTF challenges, and connect with industry professionals.
               </p>
             </div>
@@ -203,7 +203,7 @@ export default function Home() {
               Ready to start your cybersecurity journey?
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              Join 150+ students and professionals in LPU's most active cybersecurity community.
+              Join 150+ students and professionals in LPU&apos;s most active cybersecurity community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

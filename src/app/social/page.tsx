@@ -100,11 +100,11 @@ export default function SocialPage() {
               &lt;CONNECT <span className="text-red-600">WITH US/&gt;</span>
             </h1>
             <p className="text-xl md:text-2xl text-red-600 font-mono">
-              // Join Our Digital Community
+              {/* Join Our Digital Community */}
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto font-mono">
-              # Follow EncryptEdge across all platforms to stay connected with the cybersecurity community, 
-              get updates on events, workshops, and engage with fellow cyber enthusiasts.
+              {/* Follow EncryptEdge across all platforms to stay connected with the cybersecurity community, 
+              get updates on events, workshops, and engage with fellow cyber enthusiasts. */}
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function SocialPage() {
               &gt; Follow Us <span className="text-red-700">Everywhere</span>
             </h2>
             <p className="text-gray-400 text-lg font-mono">
-              // Choose your preferred platform to connect with us
+              {/* Choose your preferred platform to connect with us */}
             </p>
           </div>
 
@@ -158,8 +158,8 @@ export default function SocialPage() {
               &gt; Stay <span className="text-red-700">Connected</span>
             </h2>
             <p className="text-gray-400 text-lg mb-8 font-mono">
-              // Don&apos;t miss out on the latest cybersecurity trends, workshops, and community events. 
-              Follow us on your favorite platform!
+              {/* Don&apos;t miss out on the latest cybersecurity trends, workshops, and community events. 
+              Follow us on your favorite platform! */}
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <a 

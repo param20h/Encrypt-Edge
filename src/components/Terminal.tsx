@@ -9,17 +9,17 @@ interface TerminalProps {
 export default function Terminal({ className = '' }: TerminalProps) {
   const [text, setText] = useState('');
   const [currentLine, setCurrentLine] = useState(0);
-  
-  const lines = [
-    '> Initializing cyber connection...',
-    '> Connecting to the grid...',
-    '> Access granted.',
-    '> Welcome to EncryptEdge.',
-    '> Type "help" for available commands.',
-    '> _'
-  ];
 
   useEffect(() => {
+    const lines = [
+      '> Initializing cyber connection...',
+      '> Connecting to the grid...',
+      '> Access granted.',
+      '> Welcome to EncryptEdge.',
+      '> Type "help" for available commands.',
+      '> _'
+    ];
+    
     if (currentLine < lines.length) {
       const line = lines[currentLine];
       let charIndex = 0;
@@ -39,7 +39,7 @@ export default function Terminal({ className = '' }: TerminalProps) {
 
       return () => clearInterval(typeInterval);
     }
-  }, [currentLine, lines]);
+  }, [currentLine]);
 
   return (
     <div className={`bg-black/90 border border-cyan-500/50 rounded-lg p-4 font-mono text-green-400 ${className}`}>

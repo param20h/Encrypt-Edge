@@ -29,7 +29,7 @@ export default function CyberNav() {
             />
             <div>
               <span className="text-red-700 font-bold text-xl font-mono">&lt;EncryptEdge/&gt;</span>
-              <div className="text-xs text-gray-500 font-mono">// LPU Cyber Community</div>
+              <div className="text-xs text-gray-500 font-mono">{/* LPU Cyber Community */}</div>
             </div>
           </Link>
 
