@@ -12,10 +12,10 @@ export default function Home() {
             <div className="space-y-6">
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight font-mono">
                 Cybersecurity Excellence for 
-                <span className="text-red-700"> Tomorrow's Leaders</span>
+                <span className="text-red-700"> Tomorrow&apos;s Leaders</span>
               </h1>
               <p className="text-xl md:text-2xl text-red-600 max-w-4xl mx-auto font-mono">
-                Join LPU's premier cybersecurity community. Learn cutting-edge security practices, 
+                Join LPU&apos;s premier cybersecurity community. Learn cutting-edge security practices, 
                 compete in CTF challenges, and connect with industry professionals.
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function Home() {
 
             {/* Trust Indicators */}
             <div className="pt-8">
-              <p className="text-sm text-gray-500 mb-4 font-mono">// Trusted by students and professionals</p>
+              <p className="text-sm text-gray-500 mb-4 font-mono">{/* Trusted by students and professionals */}</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div className="border border-red-900/30 bg-red-950/20 p-4 rounded-lg">
                   <div className="text-3xl font-bold text-red-700 font-mono">150+</div>
@@ -166,7 +166,7 @@ export default function Home() {
               [*] Our <span className="text-red-700"> Previous Sponsors</span>
             </h2>
             <p className="text-xl text-red-600 font-mono">
-              // Powered by industry leaders in cybersecurity
+              {/* Powered by industry leaders in cybersecurity */}
             </p>
           </div>
           
@@ -240,7 +240,7 @@ export default function Home() {
               $ ./getting-started.sh
             </h2>
             <p className="text-xl text-red-600 font-mono">
-              // Join our community in three easy steps
+              {/* Join our community in three easy steps */}
             </p>
           </div>
 
@@ -280,7 +280,7 @@ export default function Home() {
               &gt; Ready to start your cybersecurity journey?
             </h2>
             <p className="text-xl text-red-600 mb-8 font-mono">
-              // Join 150+ students and professionals in LPU's most active cybersecurity community.
+              {/* Join 150+ students and professionals in LPU&apos;s most active cybersecurity community. */}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

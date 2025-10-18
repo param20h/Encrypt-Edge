@@ -116,7 +116,7 @@ export default function Community() {
             &lt;Community <span className="text-red-700">Members/&gt;</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-mono">
-            // Meet the passionate individuals driving LPU&apos;s cybersecurity community forward
+            {/* Meet the passionate individuals driving LPU&apos;s cybersecurity community forward */}
           </p>
         </div>
 
@@ -245,7 +245,7 @@ export default function Community() {
               &gt; Want to Join the Team?
             </h2>
             <p className="text-xl text-red-600 mb-8 font-mono">
-              // We&apos;re always looking for passionate cybersecurity enthusiasts!
+              {/* We&apos;re always looking for passionate cybersecurity enthusiasts! */}
             </p>
             <a 
               href="https://tinyurl.com/Encryptedge" 

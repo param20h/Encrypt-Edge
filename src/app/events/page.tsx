@@ -1,6 +1,4 @@
-import CyberCard from '@/components/ui/CyberCard';
-import NeonButton from '@/components/ui/NeonButton';
-import GlitchText from '@/components/ui/GlitchText';
+'use client';
 
 export default function Events() {
   const upcomingEvents = [
@@ -51,7 +49,7 @@ export default function Events() {
             &lt;Cyber <span className="text-red-700">Events/&gt;</span>
           </h1>
           <p className="text-gray-400 text-lg font-mono">
-            // Compete, learn, and network with the global cybersecurity community
+            {/* Compete, learn, and network with the global cybersecurity community */}
           </p>
         </div>
 
@@ -72,7 +70,7 @@ export default function Events() {
                     &gt; Stay Tuned!
                   </h3>
                   <p className="text-gray-400 font-mono text-sm">
-                    // New exciting events and workshops coming soon. Follow us on social media for updates!
+                    {/* New exciting events and workshops coming soon. Follow us on social media for updates! */}
                   </p>
                 </div>
               </div>
@@ -91,7 +89,7 @@ export default function Events() {
                           }`}>
                             [{event.status}]
                           </span>
-                          <span className="text-gray-500 text-xs font-mono">// {event.type}</span>
+                          <span className="text-gray-500 text-xs font-mono">{/* {event.type} */}</span>
                         </div>
                         
                         <h3 className="text-xl font-bold text-red-700 mb-2 font-mono">[+] {event.title}</h3>
@@ -190,7 +188,7 @@ export default function Events() {
                   className="w-full bg-black border border-red-900/50 rounded px-3 py-2 text-white focus:border-red-700 focus:outline-none font-mono text-sm"
                 />
                 <select className="w-full bg-black border border-red-900/50 rounded px-3 py-2 text-white focus:border-red-700 focus:outline-none font-mono text-sm">
-                  <option value="">// Select Interest</option>
+                  <option value="">{/* Select Interest */}</option>
                   <option value="advanced">Intro to Advanced Cybersecurity</option>
                   <option value="all">All Events</option>
                 </select>
@@ -198,7 +196,7 @@ export default function Events() {
                   &gt; Notify Me
                 </button>
                 <p className="text-xs text-gray-500 font-mono text-center">
-                  // Stay updated with our latest events
+                  {/* Stay updated with our latest events */}
                 </p>
               </div>
             </div>
