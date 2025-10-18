@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "EncryptEdge - Cybersecurity Community",
-  description: "Join the ultimate cybersecurity community. Learn, compete, and connect with cyber warriors from around the grid.",
+  description: "Join LPU's premier cybersecurity community. Learn cutting-edge security practices, compete in CTF challenges, and connect with industry professionals.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen text-white`}
+        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-black min-h-screen text-white`}
       >
         <MatrixRain />
         <CyberNav />

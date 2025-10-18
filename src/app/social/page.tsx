@@ -1,6 +1,4 @@
-import NeonButton from '@/components/ui/NeonButton';
-import CyberCard from '@/components/ui/CyberCard';
-import GlitchText from '@/components/ui/GlitchText';
+import React from 'react';
 
 const SocialIcon = ({ platform }: { platform: string }) => {
   const iconClass = "w-16 h-16 mx-auto";
@@ -58,73 +56,54 @@ export default function SocialPage() {
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/company/encryptedge/',
-      color: 'blue',
       description: 'Connect with us professionally and stay updated with our career opportunities and industry insights.'
     },
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/encryptedge/',
-      color: 'pink',
       description: 'Follow our visual journey and behind-the-scenes content of our cybersecurity community.'
     },
     {
       name: 'Twitter/X',
       url: 'http://x.com/Encrypt_Edge',
-      color: 'cyan',
       description: 'Get real-time updates, cybersecurity tips, and engage in tech discussions.'
     },
     {
       name: 'Discord',
       url: 'https://dub.sh/ee-d',
-      color: 'purple',
       description: 'Join our Discord community for real-time chat, collaboration, and gaming sessions.'
     },
     {
       name: 'YouTube',
       url: 'https://www.youtube.com/@encryptedge',
-      color: 'red',
       description: 'Subscribe to our channel for tutorials, workshops, and cybersecurity content.'
     },
     {
       name: 'Facebook',
       url: 'https://www.facebook.com/EncryptEdge',
-      color: 'blue',
       description: 'Like our page for community updates, events, and networking opportunities.'
     },
     {
       name: 'WhatsApp',
       url: 'https://chat.whatsapp.com/Kdzl9jmcE4f2RiPcKhxguE',
-      color: 'green',
       description: 'Join our WhatsApp group for instant updates, discussions, and quick community support.'
     }
   ];
 
-  const getColorClasses = (color: string) => {
-    const colorMap = {
-      blue: 'from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600',
-      pink: 'from-pink-500 to-pink-700 hover:from-pink-400 hover:to-pink-600',
-      cyan: 'from-cyan-500 to-cyan-700 hover:from-cyan-400 hover:to-cyan-600',
-      purple: 'from-purple-500 to-purple-700 hover:from-purple-400 hover:to-purple-600',
-      red: 'from-red-500 to-red-700 hover:from-red-400 hover:to-red-600',
-      green: 'from-green-500 to-green-700 hover:from-green-400 hover:to-green-600'
-    };
-    return colorMap[color as keyof typeof colorMap] || colorMap.cyan;
-  };
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black">
       {/* Hero Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="space-y-6 mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 font-mono">
-              <GlitchText text="CONNECT" />
+            <h1 className="text-5xl md:text-7xl font-bold text-white font-mono">
+              &lt;CONNECT <span className="text-red-600">WITH US/&gt;</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 font-mono">
-              Join Our <span className="text-cyan-400">Digital</span> Community
+            <p className="text-xl md:text-2xl text-red-600 font-mono">
+              // Join Our Digital Community
             </p>
-            <p className="text-lg text-slate-400 max-w-3xl mx-auto">
-              Follow EncryptEdge across all platforms to stay connected with the cybersecurity community, 
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto font-mono">
+              # Follow EncryptEdge across all platforms to stay connected with the cybersecurity community, 
               get updates on events, workshops, and engage with fellow cyber enthusiasts.
             </p>
           </div>
@@ -136,36 +115,36 @@ export default function SocialPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4 font-mono">
-              Follow Us <span className="text-cyan-400">Everywhere</span>
+              &gt; Follow Us <span className="text-red-700">Everywhere</span>
             </h2>
-            <p className="text-slate-300 text-lg">
-              Choose your preferred platform to connect with us
+            <p className="text-gray-400 text-lg font-mono">
+              // Choose your preferred platform to connect with us
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {socialLinks.map((social, index) => (
-              <CyberCard key={social.name} glowColor={social.color as "cyan" | "purple" | "green" | "orange"}>
+            {socialLinks.map((social) => (
+              <div key={social.name} className="bg-black border-2 border-red-900/50 rounded-lg p-6 hover:border-red-800 hover:shadow-lg hover:shadow-red-900/20 transition-all">
                 <div className="text-center space-y-4">
-                  <div className="mb-4">
+                  <div className="mb-4 text-red-700">
                     <SocialIcon platform={social.name} />
                   </div>
-                  <h3 className="text-2xl font-bold text-white font-mono">
-                    {social.name}
+                  <h3 className="text-2xl font-bold text-red-700 font-mono">
+                    [{social.name}]
                   </h3>
-                  <p className="text-slate-300 text-sm mb-6">
+                  <p className="text-gray-400 text-sm mb-6 font-mono">
                     {social.description}
                   </p>
                   <a
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-block w-full px-6 py-3 rounded-lg bg-gradient-to-r ${getColorClasses(social.color)} text-white font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-mono`}
+                    className="inline-block w-full px-6 py-3 rounded-lg bg-red-800 hover:bg-red-900 text-white font-semibold transition-all border border-red-700 shadow-lg shadow-red-900/30 hover:shadow-red-900/50 font-mono"
                   >
-                    Follow on {social.name}
+                    &gt; Follow on {social.name}
                   </a>
                 </div>
-              </CyberCard>
+              </div>
             ))}
           </div>
         </div>
@@ -174,25 +153,31 @@ export default function SocialPage() {
       {/* Call to Action */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="border border-cyan-500/30 rounded-lg p-8 bg-black/50 backdrop-blur-sm">
+          <div className="border-2 border-red-800 rounded-lg p-8 bg-gradient-to-br from-red-950/50 to-black backdrop-blur-sm shadow-2xl shadow-red-900/20">
             <h2 className="text-4xl font-bold text-white mb-4 font-mono">
-              Stay <span className="text-cyan-400">Connected</span>
+              &gt; Stay <span className="text-red-700">Connected</span>
             </h2>
-            <p className="text-slate-300 text-lg mb-8">
-              Don&apos;t miss out on the latest cybersecurity trends, workshops, and community events. 
+            <p className="text-gray-400 text-lg mb-8 font-mono">
+              // Don&apos;t miss out on the latest cybersecurity trends, workshops, and community events. 
               Follow us on your favorite platform!
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <NeonButton size="lg">
-                <a href="https://chat.whatsapp.com/Kdzl9jmcE4f2RiPcKhxguE" target="_blank" rel="noopener noreferrer">
-                  Join WhatsApp Group
-                </a>
-              </NeonButton>
-              <NeonButton variant="secondary" size="lg">
-                <a href="https://dub.sh/ee-d" target="_blank" rel="noopener noreferrer">
-                  Join Discord Community
-                </a>
-              </NeonButton>
+              <a 
+                href="https://chat.whatsapp.com/Kdzl9jmcE4f2RiPcKhxguE" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-red-800 hover:bg-red-900 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-red-900/50 hover:shadow-red-900/75 border border-red-700 font-mono"
+              >
+                [+] Join WhatsApp Group
+              </a>
+              <a 
+                href="https://dub.sh/ee-d" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="border-2 border-red-800 text-red-700 hover:bg-red-800 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all font-mono"
+              >
+                [+] Join Discord Community
+              </a>
             </div>
           </div>
         </div>

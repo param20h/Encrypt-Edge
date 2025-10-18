@@ -38,7 +38,13 @@ export default function MatrixRain() {
       ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#0aff0a';
+      // Dark red hacker theme gradient
+      const gradient = ctx.createLinearGradient(0, 0, 0, fontSize);
+      gradient.addColorStop(0, '#8B0000');
+      gradient.addColorStop(0.5, '#6B0000');
+      gradient.addColorStop(1, '#4B0000');
+      
+      ctx.fillStyle = gradient;
       ctx.font = `${fontSize}px monospace`;
 
       for (let i = 0; i < drops.length; i++) {
@@ -63,7 +69,7 @@ export default function MatrixRain() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 opacity-20"
+      className="fixed top-0 left-0 w-full h-full -z-10 opacity-25"
       style={{ background: 'transparent' }}
     />
   );
